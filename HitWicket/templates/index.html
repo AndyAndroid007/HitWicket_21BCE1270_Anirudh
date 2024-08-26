@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Board</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <h1>HitWicket's Exclusive 5x5 Board Game</h1>
+    <div id="status">
+        <div id="game-status"></div>
+        <div id="turn-status"></div>
+    </div>
+    <div id="board" class="grid"></div>
+    <div id="move-options">
+        <div id="move-buttons" class="move-buttons"></div>
+    </div>
+    <div id="game-messages"></div>
+    
+</body>
+</html>
